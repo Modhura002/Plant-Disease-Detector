@@ -1,0 +1,68 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual Environments
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Environment Variables
+# =========================
+.env
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Ignore uploaded images
+# =========================
+static/uploads/*
+!static/uploads/.gitkeep
+
+# =========================
+# Ignore generated GradCAM images
+# =========================
+static/gradcam/*
+!static/gradcam/.gitkeep
+
+# =========================
+# Ignore Dataset
+# =========================
+dataset/
+
+# =========================
+# Ignore Generated Outputs
+# =========================
+predictions/
+
+# =========================
+# Ignore Local Test Images
+# =========================
+test_images/
+pv_test_images/

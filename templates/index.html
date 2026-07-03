@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    
+    <div class="leaves">
+        <div class="leaf" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="leaf" style="left: 30%; animation-delay: 4s;"></div>
+        <div class="leaf" style="left: 50%; animation-delay: 8s;"></div>
+        <div class="leaf" style="left: 70%; animation-delay: 2s;"></div>
+        <div class="leaf" style="left: 90%; animation-delay: 6s;"></div>
+    </div>
+
+    <div class="container">
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <i class="ph ph-plant"></i>
+                Plant Disease AI
+            </a>
+            <div class="mobile-toggle" onclick="toggleMobileMenu()">
+                <i class="ph ph-list"></i>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+    </div>
+
+    <section class="hero container">
+        <h1>Intelligent Plant <br> <span class="title-serif">Disease Detection</span></h1>
+        <p class="subtitle title-serif">Powered by Explainable AI.</p>
+        
+        <div class="hero-actions">
+            <button class="btn btn-primary" onclick="openUploadModal()">
+                <i class="ph ph-upload-simple"></i>
+                Upload Image
+            </button>
+            <button class="btn btn-outline" onclick="openCameraModal()">
+                <i class="ph ph-camera"></i>
+                Capture Photo
+            </button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-icon"><i class="ph ph-plant"></i></div>
+                <div class="stat-info">
+                    <h4>38+</h4>
+                    <p>Diseases Detected</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="ph ph-cpu"></i></div>
+                <div class="stat-info">
+                    <h4>AI Powered</h4>
+                    <p>ResNet50 Model</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="ph ph-scan"></i></div>
+                <div class="stat-info">
+                    <h4>Explained</h4>
+                    <p>Grad-CAM</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="ph ph-clock"></i></div>
+                <div class="stat-info">
+                    <h4>Instant</h4>
+                    <p>Results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works container">
+        <p class="text-primary" style="text-transform: uppercase; letter-spacing: 2px; font-size: 12px; font-weight: 600; margin-bottom: 8px;">Simple Steps</p>
+        <h2>How It <span class="title-serif">Works</span></h2>
+        
+        <div class="timeline">
+            <div class="timeline-step">
+                <div class="step-icon"><i class="ph ph-upload-simple"></i></div>
+                <div class="step-info">
+                    <h4>1. Upload Image</h4>
+                    <p>Upload or capture a photo of the plant leaf.</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-icon"><i class="ph ph-brain"></i></div>
+                <div class="step-info">
+                    <h4>2. AI Analysis</h4>
+                    <p>Our AI model analyzes the image deeply.</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-icon"><i class="ph ph-magnifying-glass"></i></div>
+                <div class="step-info">
+                    <h4>3. Disease Prediction</h4>
+                    <p>We predict the disease with high accuracy.</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-icon"><i class="ph ph-shield-check"></i></div>
+                <div class="step-info">
+                    <h4>4. Get Solutions</h4>
+                    <p>Get detailed treatment and prevention tips.</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-icon"><i class="ph ph-sparkle"></i></div>
+                <div class="step-info">
+                    <h4>5. Grad-CAM View</h4>
+                    <p>Visual explanation of where model focuses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features container">
+        <h2 class="text-center" style="font-size: 32px; margin-bottom: 64px;">Why Choose <span class="title-serif">Us</span></h2>
+        
+        <div class="features-grid">
+            <div class="glass-card feature-card">
+                <i class="ph ph-leaf"></i>
+                <h3>High Accuracy</h3>
+                <p>Powered by advanced ResNet50 model trained on 38+ plant diseases for precise diagnosis.</p>
+            </div>
+            <div class="glass-card feature-card">
+                <i class="ph ph-brain"></i>
+                <h3>Explainable AI</h3>
+                <p>Grad-CAM visualization shows exactly what the AI focuses on to make predictions.</p>
+            </div>
+            <div class="glass-card feature-card">
+                <i class="ph ph-flask"></i>
+                <h3>Complete Guide</h3>
+                <p>Get comprehensive symptoms, causes, treatments, and prevention methods.</p>
+            </div>
+            <div class="glass-card feature-card">
+                <i class="ph ph-users"></i>
+                <h3>Farmer Friendly</h3>
+                <p>Easy to use interface with instant results and actionable advice for everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>New era. <span class="title-serif">Same energy.</span></h2>
+            <p>Empowering farmers with AI for a healthier tomorrow.</p>
+            <p class="copyright">&copy; 2024 Plant Disease AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Upload Modal -->
+    <div class="upload-modal" id="uploadModal">
+        <div class="upload-card">
+            <button class="close-modal" onclick="closeModals()"><i class="ph ph-x"></i></button>
+            <h3>Upload Leaf Image</h3>
+            <p class="text-muted" style="margin-top: 8px;">Select a clear photo of the infected leaf.</p>
+            
+            <form id="uploadForm" action="/predict" method="POST" enctype="multipart/form-data" onsubmit="showLoading()">
+                <div class="drop-zone" id="dropZone" onclick="document.getElementById('fileInput').click()">
+                    <i class="ph ph-upload-simple drop-zone-icon"></i>
+                    <p>Drag & drop an image or click to browse</p>
+                    <input type="file" name="image" id="fileInput" class="file-input" accept="image/*" required onchange="handleFileSelect(this)">
+                </div>
+                <img id="imagePreview" class="image-preview">
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px;">
+                    Analyze Image
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Camera Modal -->
+    <div class="camera-modal" id="cameraModal">
+        <div class="upload-card">
+            <button class="close-modal" onclick="closeModals()"><i class="ph ph-x"></i></button>
+            <h3>Capture Photo</h3>
+            <p class="text-muted" style="margin-top: 8px;">Take a clear picture of the plant leaf.</p>
+            
+            <div style="margin-top: 24px;">
+                <video id="video-element" autoplay playsinline></video>
+                <canvas id="canvas-element"></canvas>
+                <button type="button" class="btn btn-primary" style="width: 100%;" onclick="capturePhoto()">
+                    <i class="ph ph-camera"></i> Capture
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+        <h2>Analyzing Image...</h2>
+        <p class="text-muted">Our AI is predicting the disease</p>
+    </div>
+
+    <script>
+        // Modal logic
+        function openUploadModal() {
+            document.getElementById('uploadModal').classList.add('active');
+        }
+        
+        function openCameraModal() {
+            document.getElementById('cameraModal').classList.add('active');
+            startCamera();
+        }
+        
+        function closeModals() {
+            document.getElementById('uploadModal').classList.remove('active');
+            document.getElementById('cameraModal').classList.remove('active');
+            stopCamera();
+            
+            // Reset upload form
+            document.getElementById('fileInput').value = '';
+            document.getElementById('imagePreview').style.display = 'none';
+            document.getElementById('imagePreview').src = '';
+            document.getElementById('dropZone').style.display = 'block';
+        }
+
+        // Drag and Drop
+        const dropZone = document.getElementById('dropZone');
+        
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+        
+        dropZone.addEventListener('dragleave', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+        });
+        
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            
+            if (e.dataTransfer.files.length) {
+                document.getElementById('fileInput').files = e.dataTransfer.files;
+                handleFileSelect(document.getElementById('fileInput'));
+            }
+        });
+
+        // Image Preview
+        function handleFileSelect(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').src = e.target.result;
+                    document.getElementById('imagePreview').style.display = 'block';
+                    document.getElementById('dropZone').style.display = 'none';
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Camera Logic
+        let videoStream = null;
+        
+        async function startCamera() {
+            try {
+                videoStream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } });
+                document.getElementById('video-element').srcObject = videoStream;
+            } catch (err) {
+                alert("Camera access denied or not available.");
+                closeModals();
+            }
+        }
+        
+        function stopCamera() {
+            if (videoStream) {
+                videoStream.getTracks().forEach(track => track.stop());
+                videoStream = null;
+            }
+        }
+        
+        function capturePhoto() {
+            const video = document.getElementById('video-element');
+            const canvas = document.getElementById('canvas-element');
+            const context = canvas.getContext('2d');
+            
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            
+            canvas.toBlob(function(blob) {
+                const file = new File([blob], "camera_capture.jpg", { type: "image/jpeg" });
+                
+                // Create a DataTransfer object to assign the file to the input
+                const dataTransfer = new DataTransfer();
+                dataTransfer.items.add(file);
+                
+                document.getElementById('fileInput').files = dataTransfer.files;
+                
+                stopCamera();
+                showLoading();
+                document.getElementById('uploadForm').submit();
+            }, 'image/jpeg');
+        }
+
+        function showLoading() {
+            document.getElementById('loadingOverlay').classList.add('active');
+        }
+
+        // Sticky Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

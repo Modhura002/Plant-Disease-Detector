@@ -1,0 +1,1070 @@
+{
+    "Apple___Apple_scab": {
+        "name": "Apple Scab",
+        "crop": "Apple",
+        "severity": "Medium",
+        "symptoms": [
+            "Olive-green to dark brown spots on leaves",
+            "Dark scabby lesions on fruits",
+            "Premature leaf drop"
+        ],
+        "cause": "Caused by the fungus Venturia inaequalis under cool and humid conditions.",
+        "treatment": [
+            "Prune infected branches",
+            "Apply fungicides during the growing season",
+            "Remove fallen infected leaves"
+        ],
+        "prevention": [
+            "Maintain proper tree spacing",
+            "Improve air circulation",
+            "Clean orchard debris regularly"
+        ],
+        "organic_treatment": [
+            "Neem oil spray",
+            "Sulfur-based fungicide"
+        ],
+        "chemical_treatment": [
+            "Captan",
+            "Myclobutanil"
+        ]
+    },
+    "Apple___Black_rot": {
+        "name": "Apple Black Rot",
+        "crop": "Apple",
+        "severity": "High",
+        "symptoms": [
+            "Purple leaf spots",
+            "Black rotten fruits",
+            "Cankers on branches"
+        ],
+        "cause": "Caused by the fungus Botryosphaeria obtusa.",
+        "treatment": [
+            "Prune infected wood",
+            "Remove mummified fruits",
+            "Apply recommended fungicides"
+        ],
+        "prevention": [
+            "Sanitize pruning tools",
+            "Remove infected debris",
+            "Avoid tree injuries"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Neem oil"
+        ],
+        "chemical_treatment": [
+            "Thiophanate-methyl",
+            "Captan"
+        ]
+    },
+    "Apple___Cedar_apple_rust": {
+        "name": "Apple Cedar Rust",
+        "crop": "Apple",
+        "severity": "Medium",
+        "symptoms": [
+            "Bright orange leaf spots",
+            "Yellow halos around lesions",
+            "Premature leaf fall"
+        ],
+        "cause": "Caused by Gymnosporangium juniperi-virginianae, alternating between apple and cedar trees.",
+        "treatment": [
+            "Remove nearby infected cedar hosts",
+            "Apply fungicide during spring",
+            "Prune infected branches"
+        ],
+        "prevention": [
+            "Avoid planting apples near cedars",
+            "Maintain orchard hygiene",
+            "Monitor during wet weather"
+        ],
+        "organic_treatment": [
+            "Copper spray",
+            "Sulfur fungicide"
+        ],
+        "chemical_treatment": [
+            "Myclobutanil",
+            "Propiconazole"
+        ]
+    },
+    "Apple___healthy": {
+        "name": "Healthy Apple Leaf",
+        "crop": "Apple",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green leaves",
+            "No visible lesions",
+            "Normal growth"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Continue proper irrigation",
+            "Balanced fertilization",
+            "Routine monitoring"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Blueberry___healthy": {
+        "name": "Healthy Blueberry Leaf",
+        "crop": "Blueberry",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green foliage",
+            "Uniform leaf color",
+            "No disease symptoms"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Maintain proper watering",
+            "Monitor plant health regularly",
+            "Provide balanced nutrition"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+        "name": "Cherry Powdery Mildew",
+        "crop": "Cherry",
+        "severity": "Medium",
+        "symptoms": [
+            "White powdery coating on leaves",
+            "Leaf curling and distortion",
+            "Reduced plant vigor"
+        ],
+        "cause": "Caused by the fungus Podosphaera clandestina, favored by warm and humid conditions.",
+        "treatment": [
+            "Remove infected leaves",
+            "Apply fungicides",
+            "Prune crowded branches to improve airflow"
+        ],
+        "prevention": [
+            "Maintain good air circulation",
+            "Avoid excessive nitrogen fertilization",
+            "Inspect trees regularly"
+        ],
+        "organic_treatment": [
+            "Neem oil spray",
+            "Potassium bicarbonate spray"
+        ],
+        "chemical_treatment": [
+            "Myclobutanil",
+            "Sulfur fungicide"
+        ]
+    },
+    "Cherry_(including_sour)___healthy": {
+        "name": "Healthy Cherry Leaf",
+        "crop": "Cherry",
+        "severity": "None",
+        "symptoms": [
+            "Bright green healthy leaves",
+            "No discoloration",
+            "Normal leaf development"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Continue regular orchard maintenance",
+            "Maintain proper irrigation",
+            "Monitor for early disease symptoms"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "name": "Corn Gray Leaf Spot",
+        "crop": "Corn (Maize)",
+        "severity": "High",
+        "symptoms": [
+            "Long rectangular gray lesions",
+            "Brown leaf spots",
+            "Premature leaf drying"
+        ],
+        "cause": "Caused by the fungus Cercospora zeae-maydis under warm and humid conditions.",
+        "treatment": [
+            "Apply foliar fungicides",
+            "Remove infected crop residue",
+            "Rotate crops"
+        ],
+        "prevention": [
+            "Use resistant hybrids",
+            "Avoid continuous corn cultivation",
+            "Maintain field sanitation"
+        ],
+        "organic_treatment": [
+            "Copper-based fungicide",
+            "Compost tea application"
+        ],
+        "chemical_treatment": [
+            "Azoxystrobin",
+            "Propiconazole"
+        ]
+    },
+    "Corn_(maize)___Common_rust_": {
+        "name": "Corn Common Rust",
+        "crop": "Corn (Maize)",
+        "severity": "Medium",
+        "symptoms": [
+            "Small reddish-brown pustules",
+            "Rust-colored spores",
+            "Yellowing surrounding infected areas"
+        ],
+        "cause": "Caused by the fungus Puccinia sorghi.",
+        "treatment": [
+            "Apply fungicides if infection is severe",
+            "Remove heavily infected leaves",
+            "Monitor crop regularly"
+        ],
+        "prevention": [
+            "Plant resistant varieties",
+            "Ensure adequate plant spacing",
+            "Avoid excessive moisture"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Neem oil"
+        ],
+        "chemical_treatment": [
+            "Pyraclostrobin",
+            "Propiconazole"
+        ]
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+        "name": "Corn Northern Leaf Blight",
+        "crop": "Corn (Maize)",
+        "severity": "High",
+        "symptoms": [
+            "Long cigar-shaped gray lesions",
+            "Leaf blighting",
+            "Reduced photosynthesis"
+        ],
+        "cause": "Caused by the fungus Exserohilum turcicum.",
+        "treatment": [
+            "Apply fungicides during early infection",
+            "Remove infected plant debris",
+            "Rotate crops"
+        ],
+        "prevention": [
+            "Grow resistant hybrids",
+            "Practice crop rotation",
+            "Improve field drainage"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Biofungicides containing Bacillus species"
+        ],
+        "chemical_treatment": [
+            "Azoxystrobin",
+            "Trifloxystrobin"
+        ]
+    },
+    "Corn_(maize)___healthy": {
+        "name": "Healthy Corn Leaf",
+        "crop": "Corn (Maize)",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green leaves",
+            "Uniform coloration",
+            "No visible disease symptoms"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Continue proper irrigation",
+            "Maintain balanced fertilization",
+            "Monitor crop regularly"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Grape___Black_rot": {
+        "name": "Grape Black Rot",
+        "crop": "Grape",
+        "severity": "High",
+        "symptoms": [
+            "Brown circular leaf lesions with black borders",
+            "Black shriveled fruits (mummies)",
+            "Dark spots on stems"
+        ],
+        "cause": "Caused by the fungus Guignardia bidwellii.",
+        "treatment": [
+            "Remove infected fruits and leaves",
+            "Apply fungicide during the growing season",
+            "Prune infected shoots"
+        ],
+        "prevention": [
+            "Maintain vineyard sanitation",
+            "Ensure proper air circulation",
+            "Avoid prolonged leaf wetness"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Neem oil spray"
+        ],
+        "chemical_treatment": [
+            "Mancozeb",
+            "Myclobutanil"
+        ]
+    },
+    "Grape___Esca_(Black_Measles)": {
+        "name": "Grape Esca (Black Measles)",
+        "crop": "Grape",
+        "severity": "High",
+        "symptoms": [
+            "Tiger-striped discoloration on leaves",
+            "Dark spots on berries",
+            "Sudden vine decline"
+        ],
+        "cause": "A fungal trunk disease caused by multiple fungi including Phaeomoniella chlamydospora.",
+        "treatment": [
+            "Remove infected vines",
+            "Prune affected wood",
+            "Disinfect pruning tools"
+        ],
+        "prevention": [
+            "Protect pruning wounds",
+            "Avoid trunk injuries",
+            "Maintain vineyard hygiene"
+        ],
+        "organic_treatment": [
+            "Biological wound protectants",
+            "Copper-based products"
+        ],
+        "chemical_treatment": [
+            "Pruning wound fungicides"
+        ]
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "name": "Grape Leaf Blight",
+        "crop": "Grape",
+        "severity": "Medium",
+        "symptoms": [
+            "Brown irregular leaf spots",
+            "Yellow margins around lesions",
+            "Premature leaf fall"
+        ],
+        "cause": "Caused by the fungus Pseudocercospora vitis.",
+        "treatment": [
+            "Remove infected foliage",
+            "Apply recommended fungicides",
+            "Improve air circulation"
+        ],
+        "prevention": [
+            "Avoid overhead irrigation",
+            "Maintain vineyard cleanliness",
+            "Monitor during humid weather"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Neem oil"
+        ],
+        "chemical_treatment": [
+            "Chlorothalonil",
+            "Mancozeb"
+        ]
+    },
+    "Grape___healthy": {
+        "name": "Healthy Grape Leaf",
+        "crop": "Grape",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green leaves",
+            "Normal vine growth",
+            "No disease symptoms"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Maintain proper irrigation",
+            "Balanced fertilization",
+            "Routine vineyard monitoring"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+        "name": "Citrus Greening (Huanglongbing)",
+        "crop": "Orange",
+        "severity": "Very High",
+        "symptoms": [
+            "Yellow shoots and mottled leaves",
+            "Small, misshapen fruits",
+            "Bitter-tasting fruits",
+            "Premature fruit drop"
+        ],
+        "cause": "Caused by the bacterium Candidatus Liberibacter spp. and spread by the Asian citrus psyllid.",
+        "treatment": [
+            "Remove severely infected trees",
+            "Control psyllid population",
+            "Use disease-free planting material"
+        ],
+        "prevention": [
+            "Inspect orchards regularly",
+            "Control insect vectors",
+            "Remove infected plants immediately"
+        ],
+        "organic_treatment": [
+            "Neem oil for psyllid management",
+            "Yellow sticky traps"
+        ],
+        "chemical_treatment": [
+            "Imidacloprid",
+            "Thiamethoxam"
+        ]
+    },
+    "Peach___Bacterial_spot": {
+        "name": "Peach Bacterial Spot",
+        "crop": "Peach",
+        "severity": "High",
+        "symptoms": [
+            "Small dark spots on leaves",
+            "Shot-hole appearance",
+            "Sunken lesions on fruits",
+            "Premature leaf drop"
+        ],
+        "cause": "Caused by the bacterium Xanthomonas arboricola pv. pruni.",
+        "treatment": [
+            "Prune infected branches",
+            "Remove infected leaves",
+            "Apply bactericides when necessary"
+        ],
+        "prevention": [
+            "Use resistant cultivars",
+            "Avoid overhead irrigation",
+            "Maintain orchard sanitation"
+        ],
+        "organic_treatment": [
+            "Copper-based bactericide",
+            "Biological control agents"
+        ],
+        "chemical_treatment": [
+            "Copper hydroxide",
+            "Oxytetracycline (where permitted)"
+        ]
+    },
+    "Peach___healthy": {
+        "name": "Healthy Peach Leaf",
+        "crop": "Peach",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green foliage",
+            "No visible lesions",
+            "Normal fruit development"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Maintain balanced fertilization",
+            "Provide proper irrigation",
+            "Regular orchard inspection"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Pepper,_bell___Bacterial_spot": {
+        "name": "Bell Pepper Bacterial Spot",
+        "crop": "Bell Pepper",
+        "severity": "High",
+        "symptoms": [
+            "Water-soaked leaf spots",
+            "Brown lesions with yellow halos",
+            "Spots on fruits",
+            "Leaf drop"
+        ],
+        "cause": "Caused by Xanthomonas campestris pv. vesicatoria.",
+        "treatment": [
+            "Remove infected plants",
+            "Avoid working with wet plants",
+            "Apply bactericides"
+        ],
+        "prevention": [
+            "Use certified disease-free seeds",
+            "Rotate crops",
+            "Avoid overhead irrigation"
+        ],
+        "organic_treatment": [
+            "Copper spray",
+            "Bacillus-based bio-bactericides"
+        ],
+        "chemical_treatment": [
+            "Copper hydroxide",
+            "Mancozeb (in combination where recommended)"
+        ]
+    },
+    "Pepper,_bell___healthy": {
+        "name": "Healthy Bell Pepper Leaf",
+        "crop": "Bell Pepper",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green leaves",
+            "No discoloration",
+            "Normal growth"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Maintain proper irrigation",
+            "Provide balanced nutrients",
+            "Regular crop monitoring"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Potato___Early_blight": {
+        "name": "Potato Early Blight",
+        "crop": "Potato",
+        "severity": "Medium",
+        "symptoms": [
+            "Brown circular spots with concentric rings",
+            "Yellowing around lesions",
+            "Premature leaf drop",
+            "Reduced tuber yield"
+        ],
+        "cause": "Caused by the fungus Alternaria solani, especially in warm and humid conditions.",
+        "treatment": [
+            "Remove infected leaves",
+            "Apply fungicides",
+            "Avoid overhead irrigation"
+        ],
+        "prevention": [
+            "Practice crop rotation",
+            "Maintain proper plant spacing",
+            "Remove infected crop debris"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Neem oil spray"
+        ],
+        "chemical_treatment": [
+            "Mancozeb",
+            "Chlorothalonil"
+        ]
+    },
+    "Potato___Late_blight": {
+        "name": "Potato Late Blight",
+        "crop": "Potato",
+        "severity": "Very High",
+        "symptoms": [
+            "Large dark water-soaked lesions",
+            "White fungal growth beneath leaves",
+            "Rapid leaf collapse",
+            "Brown tuber rot"
+        ],
+        "cause": "Caused by the oomycete Phytophthora infestans.",
+        "treatment": [
+            "Destroy infected plants immediately",
+            "Apply fungicides",
+            "Avoid excessive moisture"
+        ],
+        "prevention": [
+            "Use certified disease-free seed potatoes",
+            "Improve field drainage",
+            "Monitor fields regularly"
+        ],
+        "organic_treatment": [
+            "Copper-based fungicide",
+            "Remove infected plants"
+        ],
+        "chemical_treatment": [
+            "Metalaxyl",
+            "Mancozeb"
+        ]
+    },
+    "Potato___healthy": {
+        "name": "Healthy Potato Leaf",
+        "crop": "Potato",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green leaves",
+            "No visible lesions",
+            "Normal plant growth"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Maintain proper irrigation",
+            "Balanced fertilization",
+            "Regular crop inspection"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Raspberry___healthy": {
+        "name": "Healthy Raspberry Leaf",
+        "crop": "Raspberry",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green foliage",
+            "Normal leaf shape",
+            "No disease symptoms"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Maintain proper watering",
+            "Routine monitoring",
+            "Good garden sanitation"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Soybean___healthy": {
+        "name": "Healthy Soybean Leaf",
+        "crop": "Soybean",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green leaves",
+            "Uniform growth",
+            "No discoloration"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Use quality seeds",
+            "Maintain proper soil fertility",
+            "Regular field monitoring"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Squash___Powdery_mildew": {
+        "name": "Squash Powdery Mildew",
+        "crop": "Squash",
+        "severity": "Medium",
+        "symptoms": [
+            "White powdery fungal growth on leaves",
+            "Yellowing of leaves",
+            "Leaf curling",
+            "Reduced fruit production"
+        ],
+        "cause": "Caused by fungi such as Podosphaera xanthii under warm and humid conditions.",
+        "treatment": [
+            "Remove infected leaves",
+            "Apply fungicides",
+            "Improve air circulation"
+        ],
+        "prevention": [
+            "Avoid overcrowding plants",
+            "Water at the base of the plant",
+            "Inspect plants regularly"
+        ],
+        "organic_treatment": [
+            "Neem oil spray",
+            "Potassium bicarbonate spray"
+        ],
+        "chemical_treatment": [
+            "Myclobutanil",
+            "Sulfur fungicide"
+        ]
+    },
+    "Strawberry___Leaf_scorch": {
+        "name": "Strawberry Leaf Scorch",
+        "crop": "Strawberry",
+        "severity": "Medium",
+        "symptoms": [
+            "Small purple spots on leaves",
+            "Brown scorched leaf edges",
+            "Drying of older leaves",
+            "Reduced plant vigor"
+        ],
+        "cause": "Caused by the fungus Diplocarpon earlianum.",
+        "treatment": [
+            "Remove infected foliage",
+            "Apply fungicides",
+            "Maintain proper spacing"
+        ],
+        "prevention": [
+            "Avoid wet foliage",
+            "Improve air circulation",
+            "Remove infected plant debris"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Neem oil"
+        ],
+        "chemical_treatment": [
+            "Captan",
+            "Mancozeb"
+        ]
+    },
+    "Strawberry___healthy": {
+        "name": "Healthy Strawberry Leaf",
+        "crop": "Strawberry",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green leaves",
+            "No lesions",
+            "Normal fruit production"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Maintain proper watering",
+            "Balanced fertilization",
+            "Routine monitoring"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    },
+    "Tomato___Bacterial_spot": {
+        "name": "Tomato Bacterial Spot",
+        "crop": "Tomato",
+        "severity": "High",
+        "symptoms": [
+            "Small dark water-soaked spots",
+            "Yellow halos around lesions",
+            "Fruit spotting",
+            "Premature leaf drop"
+        ],
+        "cause": "Caused by Xanthomonas species.",
+        "treatment": [
+            "Remove infected leaves",
+            "Avoid overhead irrigation",
+            "Apply bactericides"
+        ],
+        "prevention": [
+            "Use certified disease-free seeds",
+            "Rotate crops",
+            "Disinfect gardening tools"
+        ],
+        "organic_treatment": [
+            "Copper spray",
+            "Bacillus-based bio-bactericides"
+        ],
+        "chemical_treatment": [
+            "Copper hydroxide",
+            "Mancozeb"
+        ]
+    },
+    "Tomato___Early_blight": {
+        "name": "Tomato Early Blight",
+        "crop": "Tomato",
+        "severity": "High",
+        "symptoms": [
+            "Brown concentric ring lesions",
+            "Yellowing around infected areas",
+            "Lower leaves affected first",
+            "Premature leaf drop"
+        ],
+        "cause": "Caused by the fungus Alternaria solani.",
+        "treatment": [
+            "Remove infected leaves",
+            "Apply fungicides",
+            "Improve field sanitation"
+        ],
+        "prevention": [
+            "Rotate crops",
+            "Avoid overhead irrigation",
+            "Maintain proper plant spacing"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Neem oil"
+        ],
+        "chemical_treatment": [
+            "Chlorothalonil",
+            "Mancozeb"
+        ]
+    },
+    "Tomato___Late_blight": {
+        "name": "Tomato Late Blight",
+        "crop": "Tomato",
+        "severity": "Very High",
+        "symptoms": [
+            "Large dark water-soaked lesions",
+            "White fungal growth on leaf undersides",
+            "Rapid leaf collapse",
+            "Dark brown fruit rot"
+        ],
+        "cause": "Caused by the oomycete Phytophthora infestans.",
+        "treatment": [
+            "Remove infected plants immediately",
+            "Apply fungicides",
+            "Avoid excessive leaf moisture"
+        ],
+        "prevention": [
+            "Use disease-free seedlings",
+            "Improve air circulation",
+            "Avoid overhead irrigation"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Remove infected plants"
+        ],
+        "chemical_treatment": [
+            "Metalaxyl",
+            "Mancozeb"
+        ]
+    },
+    "Tomato___Leaf_Mold": {
+        "name": "Tomato Leaf Mold",
+        "crop": "Tomato",
+        "severity": "Medium",
+        "symptoms": [
+            "Yellow patches on upper leaf surface",
+            "Olive-green mold underneath leaves",
+            "Leaf curling",
+            "Premature leaf drop"
+        ],
+        "cause": "Caused by the fungus Passalora fulva.",
+        "treatment": [
+            "Remove infected leaves",
+            "Reduce humidity",
+            "Apply fungicides"
+        ],
+        "prevention": [
+            "Provide proper ventilation",
+            "Avoid overcrowding",
+            "Water at the plant base"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Neem oil"
+        ],
+        "chemical_treatment": [
+            "Chlorothalonil",
+            "Mancozeb"
+        ]
+    },
+    "Tomato___Septoria_leaf_spot": {
+        "name": "Tomato Septoria Leaf Spot",
+        "crop": "Tomato",
+        "severity": "High",
+        "symptoms": [
+            "Small circular spots with gray centers",
+            "Dark brown borders",
+            "Yellowing of lower leaves",
+            "Premature defoliation"
+        ],
+        "cause": "Caused by the fungus Septoria lycopersici.",
+        "treatment": [
+            "Remove infected foliage",
+            "Apply fungicides",
+            "Avoid wet foliage"
+        ],
+        "prevention": [
+            "Rotate crops",
+            "Improve air circulation",
+            "Remove crop debris"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Biofungicides"
+        ],
+        "chemical_treatment": [
+            "Chlorothalonil",
+            "Mancozeb"
+        ]
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "name": "Tomato Two-Spotted Spider Mite",
+        "crop": "Tomato",
+        "severity": "Medium",
+        "symptoms": [
+            "Tiny yellow speckles on leaves",
+            "Fine webbing",
+            "Leaf bronzing",
+            "Leaf drying"
+        ],
+        "cause": "Infestation by the two-spotted spider mite (Tetranychus urticae).",
+        "treatment": [
+            "Wash leaves with water",
+            "Apply miticides if necessary",
+            "Remove heavily infested leaves"
+        ],
+        "prevention": [
+            "Maintain adequate humidity",
+            "Inspect plants regularly",
+            "Control weeds"
+        ],
+        "organic_treatment": [
+            "Neem oil",
+            "Insecticidal soap"
+        ],
+        "chemical_treatment": [
+            "Abamectin",
+            "Bifenazate"
+        ]
+    },
+    "Tomato___Target_Spot": {
+        "name": "Tomato Target Spot",
+        "crop": "Tomato",
+        "severity": "High",
+        "symptoms": [
+            "Brown circular lesions",
+            "Concentric rings",
+            "Yellowing leaves",
+            "Leaf drop"
+        ],
+        "cause": "Caused by the fungus Corynespora cassiicola.",
+        "treatment": [
+            "Remove infected leaves",
+            "Apply fungicides",
+            "Reduce leaf wetness"
+        ],
+        "prevention": [
+            "Improve spacing",
+            "Rotate crops",
+            "Maintain field sanitation"
+        ],
+        "organic_treatment": [
+            "Copper fungicide",
+            "Neem oil"
+        ],
+        "chemical_treatment": [
+            "Azoxystrobin",
+            "Chlorothalonil"
+        ]
+    },
+    "Tomato___Tomato_mosaic_virus": {
+        "name": "Tomato Mosaic Virus",
+        "crop": "Tomato",
+        "severity": "High",
+        "symptoms": [
+            "Mosaic light and dark green leaf pattern",
+            "Leaf curling",
+            "Stunted growth",
+            "Reduced fruit yield"
+        ],
+        "cause": "Caused by Tomato Mosaic Virus (ToMV).",
+        "treatment": [
+            "Remove infected plants",
+            "Disinfect gardening tools",
+            "Control spread immediately"
+        ],
+        "prevention": [
+            "Use certified virus-free seeds",
+            "Avoid handling healthy plants after infected ones",
+            "Control weeds"
+        ],
+        "organic_treatment": [
+            "No direct cure available",
+            "Remove infected plants"
+        ],
+        "chemical_treatment": [
+            "No effective chemical treatment for viral infections"
+        ]
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "name": "Tomato Yellow Leaf Curl Virus",
+        "crop": "Tomato",
+        "severity": "Very High",
+        "symptoms": [
+            "Severe leaf curling",
+            "Yellowing of leaves",
+            "Stunted growth",
+            "Poor fruit development"
+        ],
+        "cause": "Caused by Tomato Yellow Leaf Curl Virus and transmitted by whiteflies.",
+        "treatment": [
+            "Remove infected plants",
+            "Control whitefly population",
+            "Use resistant varieties"
+        ],
+        "prevention": [
+            "Use insect-proof nets",
+            "Monitor whiteflies regularly",
+            "Remove infected plants early"
+        ],
+        "organic_treatment": [
+            "Neem oil for whitefly control",
+            "Yellow sticky traps"
+        ],
+        "chemical_treatment": [
+            "Imidacloprid",
+            "Thiamethoxam"
+        ]
+    },
+    "Tomato___healthy": {
+        "name": "Healthy Tomato Leaf",
+        "crop": "Tomato",
+        "severity": "None",
+        "symptoms": [
+            "Healthy green foliage",
+            "Normal leaf growth",
+            "No visible disease symptoms"
+        ],
+        "cause": "No disease detected.",
+        "treatment": [
+            "No treatment required"
+        ],
+        "prevention": [
+            "Maintain proper irrigation",
+            "Balanced fertilization",
+            "Regular crop monitoring"
+        ],
+        "organic_treatment": [
+            "Not required"
+        ],
+        "chemical_treatment": [
+            "Not required"
+        ]
+    }
+}

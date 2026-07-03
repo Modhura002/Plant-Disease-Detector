@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result - Plant Disease AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+        <nav class="navbar" style="padding-top: 32px;">
+            <a href="/" class="logo text-muted" style="font-weight: 400; font-size: 15px;">
+                <i class="ph ph-arrow-left"></i>
+                Back to Home
+            </a>
+            <a href="/" class="btn btn-outline" style="padding: 8px 16px;">
+                <i class="ph ph-arrows-clockwise"></i> Predict Another
+            </a>
+        </nav>
+
+        <div class="result-header text-center">
+            <h1>Analysis <span class="title-serif">Result</span> <i class="ph ph-leaf title-serif" style="font-size: 32px;"></i></h1>
+            <p>Here's what our AI found.</p>
+        </div>
+
+        <div class="result-grid">
+            <div class="glass-card image-card">
+                <h4 class="text-center text-muted" style="font-size: 14px; font-weight: 400; margin-bottom: 12px;">Uploaded Image</h4>
+                <div class="image-wrapper">
+                    <img src="{{ image_path }}" alt="Uploaded Image">
+                </div>
+            </div>
+            <div class="glass-card image-card">
+                <h4 class="text-center text-muted" style="font-size: 14px; font-weight: 400; margin-bottom: 12px;">Grad-CAM Visualization</h4>
+                <div class="image-wrapper">
+                    <img src="{{ gradcam_path }}" alt="Grad-CAM Visualization">
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card prediction-card">
+            <div class="prediction-main">
+                <div class="disease-info">
+                    <div class="disease-icon">
+                        <i class="ph-fill ph-plant"></i>
+                    </div>
+                    <div class="disease-details">
+                        <p class="text-muted" style="font-size: 13px; margin-bottom: 4px;">Detected Disease</p>
+                        <h2>{{ disease }}</h2>
+                        <div class="badges">
+                            {% if 'High' in severity or 'Severe' in severity %}
+                                <span class="badge badge-danger"><i class="ph-fill ph-warning-circle"></i> {{ severity }} Severity</span>
+                            {% elif 'Low' in severity or 'Mild' in severity %}
+                                <span class="badge badge-warning"><i class="ph-fill ph-warning"></i> {{ severity }} Severity</span>
+                            {% elif 'Healthy' in severity %}
+                                <span class="badge badge-success"><i class="ph-fill ph-check-circle"></i> {{ severity }}</span>
+                            {% else %}
+                                <span class="badge badge-warning"><i class="ph-fill ph-warning"></i> {{ severity }} Severity</span>
+                            {% endif %}
+                            <span class="badge badge-outline"><i class="ph-fill ph-leaf"></i> {{ crop }}</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="confidence-score">
+                    <p class="text-muted" style="font-size: 13px;">Confidence Score</p>
+                    <h3>{{ confidence }}%</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="mainConfidenceBar" data-width="{{ confidence }}%"></div>
+                    </div>
+                    <p class="text-muted" style="font-size: 11px; margin-top: 6px;">
+                        {% if confidence|float > 90 %}Very High Confidence
+                        {% elif confidence|float > 75 %}High Confidence
+                        {% else %}Moderate Confidence{% endif %}
+                    </p>
+                </div>
+            </div>
+
+            <div class="meta-info">
+                <div class="meta-item">
+                    <i class="ph ph-clock"></i> Inference Time: 
+                </div>
+                <div class="meta-item text-main">
+                    <i class="ph ph-timer"></i> {{ inference_time }} seconds
+                </div>
+            </div>
+        </div>
+
+        <div class="two-col">
+            <div class="col-left" style="display: flex; flex-direction: column; gap: 16px;">
+                
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 20px; font-size: 18px;">Top 3 Predictions</h3>
+                    <div class="top-predictions">
+                        <ul>
+                            {% for item in top3_predictions %}
+                            <li>
+                                <div class="pred-header">
+                                    <span>{{ loop.index }}. {{ item.disease }}</span>
+                                    <span>{{ item.confidence }}%</span>
+                                </div>
+                                <div class="pred-bar-bg">
+                                    <div class="pred-bar" style="width: 0%;" data-width="{{ item.confidence }}%"></div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item glass-card" style="padding: 0;">
+                    <button class="accordion-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="ph-fill ph-bug icon-left"></i>
+                            Cause
+                        </div>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>{{ cause }}</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item glass-card" style="padding: 0;">
+                    <button class="accordion-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="ph-fill ph-bandaids icon-left"></i>
+                            Treatment
+                        </div>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            {% for item in treatment %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item glass-card" style="padding: 0;">
+                    <button class="accordion-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="ph-fill ph-shield-check icon-left"></i>
+                            Prevention
+                        </div>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            {% for item in prevention %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-right" style="display: flex; flex-direction: column; gap: 16px;">
+                
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 20px; font-size: 18px;">Symptoms</h3>
+                    <ul style="padding-left: 20px; color: var(--text-muted); font-size: 14px; display: flex; flex-direction: column; gap: 8px;">
+                        {% for item in symptoms %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="accordion-item glass-card" style="padding: 0;">
+                    <button class="accordion-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="ph-fill ph-leaf icon-left"></i>
+                            Organic Treatment
+                        </div>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            {% for item in organic_treatment %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item glass-card" style="padding: 0;">
+                    <button class="accordion-header">
+                        <div style="display: flex; align-items: center;">
+                            <i class="ph-fill ph-flask icon-left"></i>
+                            Chemical Treatment
+                        </div>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul>
+                            {% for item in chemical_treatment %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="glass-card model-info-card">
+            <div class="model-info">
+                <div class="model-info-item">
+                    <i class="ph ph-cpu"></i>
+                    <div class="model-info-text">
+                        <span>Model</span>
+                        <strong>{{ model_name }}</strong>
+                    </div>
+                </div>
+                <div class="model-info-item">
+                    <i class="ph ph-code"></i>
+                    <div class="model-info-text">
+                        <span>Framework</span>
+                        <strong>{{ framework }}</strong>
+                    </div>
+                </div>
+                <div class="model-info-item">
+                    <i class="ph ph-list-numbers"></i>
+                    <div class="model-info-text">
+                        <span>Classes</span>
+                        <strong>{{ num_classes }} Diseases</strong>
+                    </div>
+                </div>
+                <div class="model-info-item">
+                    <i class="ph ph-corners-out"></i>
+                    <div class="model-info-text">
+                        <span>Input Size</span>
+                        <strong>{{ input_size }}</strong>
+                    </div>
+                </div>
+                <div class="model-info-item">
+                    <i class="ph ph-eye"></i>
+                    <div class="model-info-text">
+                        <span>Explainability</span>
+                        <strong>{{ explainability }}</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Animate progress bars on load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const mainBar = document.getElementById('mainConfidenceBar');
+                mainBar.style.width = mainBar.getAttribute('data-width');
+                
+                const predBars = document.querySelectorAll('.pred-bar');
+                predBars.forEach(bar => {
+                    bar.style.width = bar.getAttribute('data-width');
+                });
+            }, 100);
+        });
+
+        // Accordion logic
+        const accordions = document.querySelectorAll('.accordion-header');
+        accordions.forEach(acc => {
+            acc.addEventListener('click', function() {
+                const item = this.parentElement;
+                
+                // Close all others (optional, if you want only one open at a time)
+                // document.querySelectorAll('.accordion-item').forEach(other => {
+                //    if(other !== item) other.classList.remove('active');
+                // });
+
+                item.classList.toggle('active');
+            });
+        });
+
+        // Sticky Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
