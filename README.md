@@ -2,6 +2,10 @@
 
 An AI-powered web application for plant disease detection using **Transfer Learning (ResNet50)** and **Grad-CAM Explainability**.
 
+## 🚀 Live Demo
+
+🌐 **Live Website:** https://modhura002-plant-disease-detector.hf.space
+
 The application allows users to upload or capture an image of a plant leaf and instantly receive:
 
 - Disease prediction
